@@ -1,0 +1,32 @@
+starting worker pid=17662 on localhost:11280 at 18:54:01.155
+starting worker pid=17677 on localhost:11280 at 18:54:01.590
+starting worker pid=17692 on localhost:11280 at 18:54:02.029
+starting worker pid=17707 on localhost:11280 at 18:54:02.464
+starting worker pid=17722 on localhost:11280 at 18:54:02.900
+starting worker pid=17737 on localhost:11280 at 18:54:03.334
+starting worker pid=17752 on localhost:11280 at 18:54:03.771
+starting worker pid=17767 on localhost:11280 at 18:54:04.208
+Loading required package: AbSolution
+Loading required package: AbSolution
+Loading required package: AbSolution
+Loading required package: AbSolution
+Loading required package: AbSolution
+Loading required package: AbSolution
+Loading required package: AbSolution
+Loading required package: AbSolution
+loaded AbSolution and set parent environment
+loaded AbSolution and set parent environment
+loaded AbSolution and set parent environment
+loaded AbSolution and set parent environment
+loaded AbSolution and set parent environment
+loaded AbSolution and set parent environment
+loaded AbSolution and set parent environment
+loaded AbSolution and set parent environment
+There were 50 or more warnings (use warnings() to see the first 50)There were 50 or more warnings (use warnings() to see the first 50)There were 50 or more warnings (use warnings() to see the first 50)There were 50 or more warnings (use warnings() to see the first 50)
+
+There were 50 or more warnings (use warnings() to see the first 50)
+There were 50 or more warnings (use warnings() to see the first 50)There were 50 or more warnings (use warnings() to see the first 50)There were 50 or more warnings (use warnings() to see the first 50)
+
+
+
+

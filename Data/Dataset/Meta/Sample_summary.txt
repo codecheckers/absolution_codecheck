@@ -1,0 +1,2 @@
+Filename	Sample	Patient	Group	Subgroup	Additional_info
+Example10x_alakazam	PBMC	HealthyDonor	CD19+		10xGenomics
