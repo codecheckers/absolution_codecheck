@@ -3,40 +3,30 @@ version: https://codecheck.org.uk/spec/config/1.0
 
 paper:
   title: >
-    The principal components of natural images
+    AbSolution Report v.0.71
   authors:
-    - name: Peter J. B. Hancock
-    - name: Roland J. Baddeley
-    - name: Leslie S. Smith
-      ORCID: 0000-0002-3716-8013
-  reference: http://pdfs.semanticscholar.org/7dcf/a42cfe3b59becb441844b72558b361693608.pdf
+    - name: García Rodrigo
+  reference: None yet
 
 manifest:
-  - file: Figure2.png
-    comment: manuscript Figure 2
-  - file: Figure3.png
-    comment: manuscript Figure 3
-  - file: Figure4.png
-    comment: manuscript Figure 4
-  - file: Figure5.png
-    comment: manuscript Figure 5
-  - file: Figure6.png
-    comment: manuscript Figure 6
-  - file: Figure7.png
-    comment: manuscript Figure 7
-  - file: Figure8.png
-    comment: manuscript Figure 8
-
+  - file: screenshots/table1.png
+    comment: Screenshot Table 1
+  - file: screenshots/figure1.png
+    comment: Screenshot Figure 1
+  - file: screenshots/figure2.png
+    comment: Screenshot Figure 2
+  - file: screenshots/figure3.png
+    comment: Screenshot Figure 3
+  - file: screenshots/figure4.png
+    comment: Screenshot Figure 4
+  
 codechecker:
-  - name: Stephen J. Eglen
-    ORCID: 0000-0001-8607-8025
-  - name: Daniel Nüst
-    ORCID: 0000-0002-0024-5046
+  - name: Sam Langton
+    ORCID: 0000-0002-1322-1553
 
 summary: >
-  Matlab code written by Iain Davies to reproduce original
-  paper; natural images provided by Peter Hancock.
-repository: https://github.com/codecheckers/Reproduction-Hancock
-check_time: "2020-04-13 10:00:00"
-certificate: 2020-XYZ
+  RMarkdown file with embedded R code created from the AbSolution Shiny app for the purposes of reproducibility.
+repository: https://github.com/langtonhugh/absolution_codecheck
+check_time: "2025-01-29 12:00:00"
+certificate: 2025-XYZ
 report: https://doi.org/10.5281/zenodo.FIXME

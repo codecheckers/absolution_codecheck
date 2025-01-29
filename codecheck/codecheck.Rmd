@@ -25,6 +25,10 @@ root = find_root("codecheck.yml")
 latex_codecheck_logo()
 ```
 
+```{r amc, fig.align = 'center', out.width='40%', echo=FALSE}
+knitr::include_graphics("../img/Amsterdam_UMC_logo_with_text.png")
+```
+
 ```{r manifest, eval=TRUE, include=FALSE}
 metadata = codecheck_metadata(root)
 manifest = metadata$manifest
@@ -56,36 +60,15 @@ latex_summary_of_manifest(metadata, manifest_df, root)
 
 # Summary
 
-This code was (not) straightforward to codecheck.
-[... ADD MORE INTERESTING FINDINGS HERE..]
+This code was straightforward to codecheck. As per the documentation, there was a `renv` lockfile located in the `0_SoftwareEnvironment` folder. I created an `.RProj` file in the root directory and copied over the lock file so that upon executing `renv::restore()` it would be easily recognised. I updated my R version to match the lockfile too. The AbSolution package itself was installed from the pre-existing `0_SoftwareEnvironment` folder using `install.packages("0_SoftwareEnvironment/R/AbSolution_0.0.5.9550.tar", repos = NULL, type="source")`. 
+
+I could then knit the RMarkdown file and it executed with no errors first time. The tables and figures are printed directly in the HTML output. The figures are interactive. For the purposes of this codecheck, I made a screenshot of each one. The resulting HTML output file matches the given file as expected. I did not test the docker file as the outputs were reproduced on a Windows machine using `renv` so there was no need to delve into this.
 
 \clearpage
 
-# CODECHECKER notes
-
-```{r git_sha, echo=FALSE}
-gitInfo <- ""
-if(git2r::in_repository(root)) {
-  gitInfo <- paste0("This check is based on the commit `", git2r::last_commit()$sha, "`.")
-}
-```
-
-The GitHub repo ...
-`r gitInfo`
-Code was written in ...
-I went through the following steps ...
-One hard problem was ...
-I added the following files ... using tools/methods ...
-
-This took ... minutes to complete on {a large workstation, my laptop}.
-
 ## Recommendations
 
-I suggest to the authors to consider the following suggestions for their next publication or workflow:
-
-- ...
-
-(document here if any of the suggestions were taken up by the authors in the meantime - do not remove any, keep track of contributions via feedback)
+The project was straightforward to reproduce so there are no specific recommendations for improvement.
 
 \clearpage
 
@@ -123,12 +106,6 @@ for(i in c(1:nrow(manifest_df))) {
 
 \clearpage
 
-## Acknowledgements
-
-I would like to thank Dr Bhatt and his team for promptly answering any
-queries I had with this reproduction.  CODECHECK is financially
-supported by the Mozilla foundation.
-
 # Citing this document
 
 ```{r, results='asis',echo=FALSE}
@@ -152,7 +129,7 @@ This document was created using [R Markdown](https://rmarkdown.rstudio.com/) usi
 `make codecheck.pdf` will regenerate the report file.
 
 ```{r}
-sessionInfo()
+read.delim("sessionInfo.txt")
 ```
 
 ```{r, include=FALSE, eval=FALSE}

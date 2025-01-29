@@ -663,6 +663,9 @@ if (!is.null(Selection_values$rows) && length(Selection_values$rows) > 0 && !is.
 ```{r r_info, warning = FALSE, message = FALSE}
           sessionInfo()
 
+# save session info for codecheck.
+writeLines(capture.output(sessionInfo()), "../codecheck/sessionInfo.txt")
+
 ```
 
 

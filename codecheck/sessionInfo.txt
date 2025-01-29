@@ -1,0 +1,103 @@
+R version 4.3.1 (2023-06-16 ucrt)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 11 x64 (build 22621)
+
+Matrix products: default
+
+
+locale:
+[1] LC_COLLATE=English_United States.utf8 
+[2] LC_CTYPE=English_United States.utf8   
+[3] LC_MONETARY=English_United States.utf8
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.utf8    
+
+time zone: Europe/Amsterdam
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] plotly_4.10.1         ggplot2_3.5.1         dplyr_1.1.2          
+[4] shiny_1.7.4           AbSolution_0.0.5.9550
+
+loaded via a namespace (and not attached):
+  [1] shinythemes_1.2.0           later_1.3.1                
+  [3] bitops_1.0-7                tibble_3.2.1               
+  [5] Peptides_2.4.5              R.oo_1.25.0                
+  [7] shinymanager_1.0.410        lifecycle_1.0.3            
+  [9] shinyjqui_0.4.1             doParallel_1.0.17          
+ [11] rprojroot_2.0.3             lattice_0.20-45            
+ [13] MASS_7.3-58.2               crosstalk_1.2.0            
+ [15] magrittr_2.0.3              sass_0.4.6                 
+ [17] rmarkdown_2.21              jquerylib_0.1.4            
+ [19] yaml_2.3.7                  bigparallelr_0.3.2         
+ [21] httpuv_1.6.11               askpass_1.1                
+ [23] reticulate_1.34.0           cowplot_1.1.1              
+ [25] DBI_1.2.3                   RColorBrewer_1.1-3         
+ [27] ade4_1.7-22                 golem_0.4.1                
+ [29] zlibbioc_1.46.0             R.cache_0.16.0             
+ [31] GenomicRanges_1.52.0        purrr_1.0.1                
+ [33] R.utils_2.12.2              BiocGenerics_0.46.0        
+ [35] RCurl_1.98-1.12             styler_1.10.0              
+ [37] bigassertr_0.1.6            reactable_0.4.4            
+ [39] GenomeInfoDbData_1.2.10     IRanges_2.34.0             
+ [41] S4Vectors_0.38.1            umap_0.2.10.0              
+ [43] RSpectra_0.16-1             parallelly_1.35.0          
+ [45] codetools_0.2-19            DelayedArray_0.26.7        
+ [47] DT_0.28                     bs4Dash_2.3.4              
+ [49] tidyselect_1.2.0            bigstatsr_1.5.12           
+ [51] viridis_0.6.3               shinyWidgets_0.7.6         
+ [53] matrixStats_1.2.0           stats4_4.3.1               
+ [55] flock_0.7                   GenomicAlignments_1.36.0   
+ [57] jsonlite_1.8.4              ellipsis_0.3.2             
+ [59] dashboardthemes_1.1.6       iterators_1.0.14           
+ [61] foreach_1.5.2               tools_4.3.1                
+ [63] progress_1.2.2              stringdist_0.9.10          
+ [65] Rcpp_1.0.10                 glue_1.6.2                 
+ [67] gridExtra_2.3               xfun_0.46                  
+ [69] MatrixGenerics_1.12.3       GenomeInfoDb_1.36.0        
+ [71] withr_2.5.0                 formatR_1.14               
+ [73] fastmap_1.1.1               sourcetools_0.1.7-1        
+ [75] fansi_1.0.4                 shinyjs_2.1.0              
+ [77] openssl_2.0.6               digest_0.6.31              
+ [79] R6_2.5.1                    mime_0.12                  
+ [81] colorspace_2.1-0            RSQLite_2.3.1              
+ [83] diptest_0.76-0              R.methodsS3_1.8.2          
+ [85] config_0.3.2                utf8_1.2.3                 
+ [87] tidyr_1.3.0                 generics_0.1.3             
+ [89] data.table_1.16.2           iterors_1.0                
+ [91] prettyunits_1.1.1           httr_1.4.6                 
+ [93] htmlwidgets_1.6.2           S4Arrays_1.0.4             
+ [95] pkgconfig_2.0.3             gtable_0.3.3               
+ [97] blob_1.2.4                  shinymeta_0.2.0.3          
+ [99] XVector_0.40.0              htmltools_0.5.5            
+[101] scales_1.3.0                fresh_0.2.0                
+[103] Biobase_2.60.0              sunburstR_2.1.8            
+[105] png_0.1-8                   attempt_0.3.1              
+[107] knitr_1.42                  rstudioapi_0.14            
+[109] tzdb_0.4.0                  nlme_3.1-162               
+[111] cachem_1.0.8                stringr_1.5.0              
+[113] KernSmooth_2.23-20          parallel_4.3.1             
+[115] shinycssloaders_1.0.0       pillar_1.9.0               
+[117] grid_4.3.1                  vctrs_0.6.5                
+[119] shazam_1.2.0                promises_1.2.0.1           
+[121] shinyFiles_0.9.3            airr_1.4.1                 
+[123] xtable_1.8-4                billboarder_0.4.0          
+[125] evaluate_0.21               readr_2.1.4                
+[127] cli_3.6.1                   compiler_4.3.1             
+[129] Rsamtools_2.16.0            rlang_1.1.1                
+[131] crayon_1.5.2                sortable_0.5.0             
+[133] fs_1.6.2                    stringi_1.7.12             
+[135] viridisLite_0.4.2           BiocParallel_1.34.1        
+[137] assertthat_0.2.1            munsell_0.5.0              
+[139] Biostrings_2.68.1           lazyeval_0.2.2             
+[141] upsetjs_1.11.1              Matrix_1.6-5               
+[143] benchmarkme_1.0.8           scrypt_0.1.6               
+[145] hms_1.1.3                   alakazam_1.3.0             
+[147] bit64_4.0.5                 learnr_0.11.5              
+[149] seqinr_4.2-30               SummarizedExperiment_1.30.1
+[151] igraph_1.6.0                memoise_2.0.1              
+[153] bslib_0.4.2                 benchmarkmeData_1.0.4      
+[155] bit_4.0.5                   ape_5.7-1                  
