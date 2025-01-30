@@ -60,7 +60,7 @@ latex_summary_of_manifest(metadata, manifest_df, root)
 
 # Summary
 
-This code was straightforward to codecheck. As per the documentation, there was a `renv` lockfile located in the `0_SoftwareEnvironment` folder. I created an `.RProj` file in the root directory and copied over the lock file so that upon executing `renv::restore()` it would be easily recognised. I updated my R version to match the lockfile too. The AbSolution package itself was installed from the pre-existing `0_SoftwareEnvironment` folder using `install.packages("0_SoftwareEnvironment/R/AbSolution_0.0.5.9550.tar", repos = NULL, type="source")`. 
+This code was straightforward to codecheck. As per the ENCORE^[https://github.com/EDS-Bioinformatics-Laboratory/ENCORE] structure, there was a `renv` lockfile located in the `0_SoftwareEnvironment` folder. I created an `.RProj` file in the root directory and copied over the lock file so that upon executing `renv::restore()` it would be easily recognised. I updated my R version to match the lockfile too. The AbSolution package itself was installed from the pre-existing `0_SoftwareEnvironment` folder using `install.packages("0_SoftwareEnvironment/R/AbSolution_0.0.5.9550.tar", repos = NULL, type="source")`. 
 
 I could then knit the RMarkdown file and it executed with no errors first time. The tables and figures are printed directly in the HTML output. The figures are interactive. For the purposes of this codecheck, I made a screenshot of each one. The resulting HTML output file matches the given file as expected. I did not test the docker file as the outputs were reproduced on a Windows machine using `renv`, so there was no need to delve into this for a codecheck.
 
