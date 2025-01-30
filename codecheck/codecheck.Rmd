@@ -62,13 +62,15 @@ latex_summary_of_manifest(metadata, manifest_df, root)
 
 This code was straightforward to codecheck. As per the documentation, there was a `renv` lockfile located in the `0_SoftwareEnvironment` folder. I created an `.RProj` file in the root directory and copied over the lock file so that upon executing `renv::restore()` it would be easily recognised. I updated my R version to match the lockfile too. The AbSolution package itself was installed from the pre-existing `0_SoftwareEnvironment` folder using `install.packages("0_SoftwareEnvironment/R/AbSolution_0.0.5.9550.tar", repos = NULL, type="source")`. 
 
-I could then knit the RMarkdown file and it executed with no errors first time. The tables and figures are printed directly in the HTML output. The figures are interactive. For the purposes of this codecheck, I made a screenshot of each one. The resulting HTML output file matches the given file as expected. I did not test the docker file as the outputs were reproduced on a Windows machine using `renv` so there was no need to delve into this.
+I could then knit the RMarkdown file and it executed with no errors first time. The tables and figures are printed directly in the HTML output. The figures are interactive. For the purposes of this codecheck, I made a screenshot of each one. The resulting HTML output file matches the given file as expected. I did not test the docker file as the outputs were reproduced on a Windows machine using `renv`, so there was no need to delve into this for a codecheck.
 
 \clearpage
 
 ## Recommendations
 
-The project was straightforward to reproduce so there are no specific recommendations for improvement.
+The project was straightforward to reproduce so there are no specific recommendations for improvement. I'd be interested to know how the authors predict users will make use of the `renv` lock file in the absence of any instructions. The lock file in the pre-existing software environment folder is a `.prod` file extension (i.e., not `.lock`, which is the default for `renv`). For me, `renv` did not recognise the lock file until I changed the file extension to `.lock` and placed it in the root folder.
+
+
 
 \clearpage
 
@@ -123,10 +125,9 @@ links in this document, the reader can then study for themselves the
 code and data.
 
 
-# About this document
+# Session info
 
-This document was created using [R Markdown](https://rmarkdown.rstudio.com/) using the [`codecheck`](https://github.com/codecheckers/codecheck) R package.
-`make codecheck.pdf` will regenerate the report file.
+The following session info was saved after successful completion of the codecheck.
 
 ```{r}
 read.delim("sessionInfo.txt")
