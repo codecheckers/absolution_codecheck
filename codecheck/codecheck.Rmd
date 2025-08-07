@@ -1,11 +1,9 @@
 ---
 output:
-  word_document:
-    toc: false
   pdf_document:
     toc: false
     includes:
-      in_header: "codecheck-preamble.sty"
+       in_header: codecheck-preamble.sty
     latex_engine: xelatex
 ---
 
