@@ -7,7 +7,7 @@ paper:
   authors:
     - name: Rodrigo García Valiente
       ORCID: 0000-0003-0444-5587
-  reference: None yet
+  reference: See ’report template’ in Results folder
 
 manifest:
   - file: screenshots/table1.png
@@ -29,5 +29,5 @@ summary: >
   RMarkdown file with embedded R code created from the AbSolution Shiny app for the purposes of reproducibility.
 repository: https://github.com/langtonhugh/absolution_codecheck
 check_time: "2025-01-29 14:00:00"
-certificate: 2025-XYZ
-report: https://doi.org/10.5281/zenodo.FIXME
+certificate: 2025-020
+report: https://doi.org/10.5281/zenodo.16758977
