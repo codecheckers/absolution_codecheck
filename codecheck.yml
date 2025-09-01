@@ -7,7 +7,7 @@ paper:
   authors:
     - name: Rodrigo García Valiente
       ORCID: 0000-0003-0444-5587
-  reference: See ’report template’ in Results folder
+  reference: https://github.com/codecheckers/absolution_codecheck/raw/refs/heads/main/Results/Report_template.html
 
 manifest:
   - file: screenshots/table1.png
@@ -27,6 +27,9 @@ codechecker:
 
 summary: >
   RMarkdown file with embedded R code created from the AbSolution Shiny app for the purposes of reproducibility.
+  This code was straightforward to codecheck.
+  An RMarkdown file could be executed with no errors.
+  The resulting HTML output file matches the given file as expected.
 repository: https://github.com/langtonhugh/absolution_codecheck
 check_time: "2025-01-29 14:00:00"
 certificate: 2025-025
